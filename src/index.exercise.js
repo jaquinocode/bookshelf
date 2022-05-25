@@ -14,10 +14,10 @@ function App() {
       <Logo width="80" height="80"></Logo>
       <h1>Bookshelf</h1>
       <div>
-        <button onClick={() => alert('you clicked login!')}>login</button>
+        <button onClick={() => alert('you clicked login!')}>Log In</button>
       </div>
       <div>
-        <button onClick={() => alert('you clicked register!')}>register</button>
+        <button onClick={() => alert('you clicked register!')}>Register</button>
       </div>
     </div>
   )
@@ -26,6 +26,6 @@ function App() {
 // 🐨 use createRoot to render the <App /> to the root element
 // 💰 find the root element with: document.getElementById('root')
 const rootDomElement = document.getElementById('root')
-const reactRoot = createRoot(rootDomElement)
-reactRoot.render(<App />)
-export {reactRoot}
+const root = createRoot(rootDomElement)
+root.render(<App />)
+export {root}
